@@ -1,0 +1,257 @@
+==============================================================================
+MODULE 1 - DATASET INSPECTION & ELIGIBILITY REPORT
+==============================================================================
+Source file : C:\Users\User\Downloads\Satellite Conjunction Framework\Collision Avoidance Challenge - Dataset\Collision Avoidance Challenge - Dataset\kelvins_competition_data\train_data\train_data.csv
+SHA-256     : ba47ce80580d5d6ff523ddc1d724901dbdfb3a5afdc5e755f0ca2bcefe6e4eb6  (verified unchanged at the end)
+
+1. ORIGINAL DATASET
+   Rows (CDM records) : 162,634
+   Columns            : 103
+   Unique event_id    : 13,154  (rows with NaN event_id: 0)
+
+   Column / dtype / non-null / missing
+   - event_id                                 int64      non-null=162634   missing=0
+   - time_to_tca                              float64    non-null=162634   missing=0
+   - mission_id                               int64      non-null=162634   missing=0
+   - risk                                     float64    non-null=162634   missing=0
+   - max_risk_estimate                        float64    non-null=162634   missing=0
+   - max_risk_scaling                         float64    non-null=162634   missing=0
+   - miss_distance                            float64    non-null=162634   missing=0
+   - relative_speed                           float64    non-null=162634   missing=0
+   - relative_position_r                      float64    non-null=162634   missing=0
+   - relative_position_t                      float64    non-null=162634   missing=0
+   - relative_position_n                      float64    non-null=162634   missing=0
+   - relative_velocity_r                      float64    non-null=162634   missing=0
+   - relative_velocity_t                      float64    non-null=162634   missing=0
+   - relative_velocity_n                      float64    non-null=162634   missing=0
+   - t_time_lastob_start                      float64    non-null=162634   missing=0
+   - t_time_lastob_end                        float64    non-null=162634   missing=0
+   - t_recommended_od_span                    float64    non-null=162634   missing=0
+   - t_actual_od_span                         float64    non-null=162634   missing=0
+   - t_obs_available                          int64      non-null=162634   missing=0
+   - t_obs_used                               int64      non-null=162634   missing=0
+   - t_residuals_accepted                     float64    non-null=162634   missing=0
+   - t_weighted_rms                           float64    non-null=162634   missing=0
+   - t_rcs_estimate                           float64    non-null=159357   missing=3277
+   - t_cd_area_over_mass                      float64    non-null=162634   missing=0
+   - t_cr_area_over_mass                      float64    non-null=162634   missing=0
+   - t_sedr                                   float64    non-null=162634   missing=0
+   - t_j2k_sma                                float64    non-null=162634   missing=0
+   - t_j2k_ecc                                float64    non-null=162634   missing=0
+   - t_j2k_inc                                float64    non-null=162634   missing=0
+   - t_ct_r                                   float64    non-null=162634   missing=0
+   - t_cn_r                                   float64    non-null=162634   missing=0
+   - t_cn_t                                   float64    non-null=162634   missing=0
+   - t_crdot_r                                float64    non-null=153404   missing=9230
+   - t_crdot_t                                float64    non-null=153404   missing=9230
+   - t_crdot_n                                float64    non-null=153404   missing=9230
+   - t_ctdot_r                                float64    non-null=153404   missing=9230
+   - t_ctdot_t                                float64    non-null=153404   missing=9230
+   - t_ctdot_n                                float64    non-null=153404   missing=9230
+   - t_ctdot_rdot                             float64    non-null=153404   missing=9230
+   - t_cndot_r                                float64    non-null=153404   missing=9230
+   - t_cndot_t                                float64    non-null=153404   missing=9230
+   - t_cndot_n                                float64    non-null=153404   missing=9230
+   - t_cndot_rdot                             float64    non-null=153404   missing=9230
+   - t_cndot_tdot                             float64    non-null=153404   missing=9230
+   - c_object_type                            str        non-null=162634   missing=0
+   - c_time_lastob_start                      float64    non-null=162623   missing=11
+   - c_time_lastob_end                        float64    non-null=162623   missing=11
+   - c_recommended_od_span                    float64    non-null=162623   missing=11
+   - c_actual_od_span                         float64    non-null=162623   missing=11
+   - c_obs_available                          float64    non-null=162623   missing=11
+   - c_obs_used                               float64    non-null=162623   missing=11
+   - c_residuals_accepted                     float64    non-null=162623   missing=11
+   - c_weighted_rms                           float64    non-null=162623   missing=11
+   - c_rcs_estimate                           float64    non-null=109793   missing=52841
+   - c_cd_area_over_mass                      float64    non-null=162634   missing=0
+   - c_cr_area_over_mass                      float64    non-null=162634   missing=0
+   - c_sedr                                   float64    non-null=162634   missing=0
+   - c_j2k_sma                                float64    non-null=162634   missing=0
+   - c_j2k_ecc                                float64    non-null=162634   missing=0
+   - c_j2k_inc                                float64    non-null=162634   missing=0
+   - c_ct_r                                   float64    non-null=162623   missing=11
+   - c_cn_r                                   float64    non-null=162623   missing=11
+   - c_cn_t                                   float64    non-null=162623   missing=11
+   - c_crdot_r                                float64    non-null=153393   missing=9241
+   - c_crdot_t                                float64    non-null=153393   missing=9241
+   - c_crdot_n                                float64    non-null=153393   missing=9241
+   - c_ctdot_r                                float64    non-null=153393   missing=9241
+   - c_ctdot_t                                float64    non-null=153393   missing=9241
+   - c_ctdot_n                                float64    non-null=153393   missing=9241
+   - c_ctdot_rdot                             float64    non-null=153393   missing=9241
+   - c_cndot_r                                float64    non-null=153393   missing=9241
+   - c_cndot_t                                float64    non-null=153393   missing=9241
+   - c_cndot_n                                float64    non-null=153393   missing=9241
+   - c_cndot_rdot                             float64    non-null=153393   missing=9241
+   - c_cndot_tdot                             float64    non-null=153393   missing=9241
+   - t_span                                   float64    non-null=162634   missing=0
+   - c_span                                   float64    non-null=162634   missing=0
+   - t_h_apo                                  float64    non-null=162634   missing=0
+   - t_h_per                                  float64    non-null=162634   missing=0
+   - c_h_apo                                  float64    non-null=162634   missing=0
+   - c_h_per                                  float64    non-null=162634   missing=0
+   - geocentric_latitude                      float64    non-null=162634   missing=0
+   - azimuth                                  float64    non-null=162634   missing=0
+   - elevation                                float64    non-null=162634   missing=0
+   - mahalanobis_distance                     float64    non-null=162634   missing=0
+   - t_position_covariance_det                float64    non-null=162634   missing=0
+   - c_position_covariance_det                float64    non-null=162634   missing=0
+   - t_sigma_r                                float64    non-null=162634   missing=0
+   - c_sigma_r                                float64    non-null=162623   missing=11
+   - t_sigma_t                                float64    non-null=162634   missing=0
+   - c_sigma_t                                float64    non-null=162623   missing=11
+   - t_sigma_n                                float64    non-null=162634   missing=0
+   - c_sigma_n                                float64    non-null=162623   missing=11
+   - t_sigma_rdot                             float64    non-null=153404   missing=9230
+   - c_sigma_rdot                             float64    non-null=153393   missing=9241
+   - t_sigma_tdot                             float64    non-null=153404   missing=9230
+   - c_sigma_tdot                             float64    non-null=153393   missing=9241
+   - t_sigma_ndot                             float64    non-null=153404   missing=9230
+   - c_sigma_ndot                             float64    non-null=153393   missing=9241
+   - F10                                      float64    non-null=155812   missing=6822
+   - F3M                                      float64    non-null=155812   missing=6822
+   - SSN                                      float64    non-null=155812   missing=6822
+   - AP                                       float64    non-null=155812   missing=6822
+
+2. TIME_TO_TCA VERIFICATION
+   min=-0.149808  max=6.993832  NaN=0  negative=391
+   Unit check: max is within a plausible day-range -> treated as DAYS (documentation should still be confirmed).
+   Events whose file order is NOT descending time_to_tca: 0
+   Rows with time_to_tca equal to previous row in same event: 0
+   CDM-id / creation-date like columns found: NONE
+   Ordering rule used: sort by time_to_tca DESCENDING (larger = earlier CDM); ties keep file order.
+   !! If a real CDM creation timestamp/id existed it would be preferable; none was detected above
+
+3. RISK COLUMN
+   min=-30.0000  max=-1.4429  NaN=0
+   rows with risk == -30 : 67,240 (41.34%)
+   rows with risk >= -6  : 10,183
+   rows with risk > 0    : 0  (log10 scale would make these impossible - check)
+   Interpretation: 'risk' is treated as log10(collision probability); -30 looks like a floor/sentinel
+   for ~zero probability. It is NOT dropped and NOT treated as missing (no documentation proves otherwise).
+   It is placed in its own category (C0) so the split handles it explicitly.
+
+4. LOCAL DOCUMENTATION
+   No documentation file found near the CSV -> definitions above are UNVERIFIED by docs.
+
+5. LEAKAGE WARNING (columns that may hold whole-event information)
+   - 'max_risk_estimate' exists. Its exact definition cannot be verified here; if it is computed from
+     the full event (incl. future CDMs) it MUST NOT be used as a model input.
+     It was kept in the files unchanged; exclude it at training time unless docs prove it is safe.
+   - 'max_risk_scaling' exists. Its exact definition cannot be verified here; if it is computed from
+     the full event (incl. future CDMs) it MUST NOT be used as a model input.
+     It was kept in the files unchanged; exclude it at training time unless docs prove it is safe.
+
+6. ELIGIBILITY RULES APPLIED
+   - >= 3 CDMs with time_to_tca >= 2.0 day  (model input: INPUT_EARLY)
+   - Target = chronologically LAST CDM of the event; its time_to_tca must be < 1.0 day
+   - CDMs with 1 <= time_to_tca < 2 are kept as HISTORICAL_NOT_INPUT (never model input)
+   - Rows with time_to_tca < 1 that are not the final CDM -> LATE_NON_TARGET (never model input)
+   - Events with missing time_to_tca or missing target risk are excluded
+
+7. RESULTS
+   Total events analysed : 13,154
+   Eligible events       : 7,592 (57.72%)
+   Excluded events       : 5,562 (42.28%)
+   CDM rows in eligible dataset : 134,862
+
+   Exclusion reasons (an event may have more than one):
+   - final_cdm_time_to_tca_not_below_1d            3,691
+   - fewer_than_3_early_cdms(>=2d)                 2,831
+   Exclusion reason combinations:
+   - final_cdm_time_to_tca_not_below_1d                                     2,731
+   - fewer_than_3_early_cdms(>=2d)                                          1,871
+   - fewer_than_3_early_cdms(>=2d);final_cdm_time_to_tca_not_below_1d       960
+
+8. EARLY CDMs (time_to_tca >= 2d) PER ELIGIBLE EVENT
+   min=3  median=14.0  mean=12.08  max=17
+     3 early CDMs : 296 events
+     4 early CDMs : 324 events
+     5 early CDMs : 347 events
+     6 early CDMs : 243 events
+     7 early CDMs : 232 events
+     8 early CDMs : 212 events
+     9 early CDMs : 232 events
+    10 early CDMs : 220 events
+    11 early CDMs : 170 events
+    12 early CDMs : 202 events
+    13 early CDMs : 405 events
+    14 early CDMs : 1,625 events
+    15 early CDMs : 2,931 events
+    16 early CDMs : 150 events
+    17 early CDMs : 3 events
+
+9. TARGET CDM SELECTION
+   Target = last CDM by time_to_tca (smallest value) within the event.
+   Eligible events whose smallest time_to_tca is tied by >1 row: 0  (the LAST of the tied rows in the file is used)
+   Target time_to_tca (eligible): min=-0.1443 max=0.9973
+
+10. MISSING VALUES (columns with at least one missing value)
+   - t_rcs_estimate                           3,277 (2.015%)
+   - t_crdot_r                                9,230 (5.675%)
+   - t_crdot_t                                9,230 (5.675%)
+   - t_crdot_n                                9,230 (5.675%)
+   - t_ctdot_r                                9,230 (5.675%)
+   - t_ctdot_t                                9,230 (5.675%)
+   - t_ctdot_n                                9,230 (5.675%)
+   - t_ctdot_rdot                             9,230 (5.675%)
+   - t_cndot_r                                9,230 (5.675%)
+   - t_cndot_t                                9,230 (5.675%)
+   - t_cndot_n                                9,230 (5.675%)
+   - t_cndot_rdot                             9,230 (5.675%)
+   - t_cndot_tdot                             9,230 (5.675%)
+   - c_time_lastob_start                      11 (0.007%)
+   - c_time_lastob_end                        11 (0.007%)
+   - c_recommended_od_span                    11 (0.007%)
+   - c_actual_od_span                         11 (0.007%)
+   - c_obs_available                          11 (0.007%)
+   - c_obs_used                               11 (0.007%)
+   - c_residuals_accepted                     11 (0.007%)
+   - c_weighted_rms                           11 (0.007%)
+   - c_rcs_estimate                           52,841 (32.491%)
+   - c_ct_r                                   11 (0.007%)
+   - c_cn_r                                   11 (0.007%)
+   - c_cn_t                                   11 (0.007%)
+   - c_crdot_r                                9,241 (5.682%)
+   - c_crdot_t                                9,241 (5.682%)
+   - c_crdot_n                                9,241 (5.682%)
+   - c_ctdot_r                                9,241 (5.682%)
+   - c_ctdot_t                                9,241 (5.682%)
+   - c_ctdot_n                                9,241 (5.682%)
+   - c_ctdot_rdot                             9,241 (5.682%)
+   - c_cndot_r                                9,241 (5.682%)
+   - c_cndot_t                                9,241 (5.682%)
+   - c_cndot_n                                9,241 (5.682%)
+   - c_cndot_rdot                             9,241 (5.682%)
+   - c_cndot_tdot                             9,241 (5.682%)
+   - c_sigma_r                                11 (0.007%)
+   - c_sigma_t                                11 (0.007%)
+   - c_sigma_n                                11 (0.007%)
+   - t_sigma_rdot                             9,230 (5.675%)
+   - c_sigma_rdot                             9,241 (5.682%)
+   - t_sigma_tdot                             9,230 (5.675%)
+   - c_sigma_tdot                             9,241 (5.682%)
+   - t_sigma_ndot                             9,230 (5.675%)
+   - c_sigma_ndot                             9,241 (5.682%)
+   - F10                                      6,822 (4.195%)
+   - F3M                                      6,822 (4.195%)
+   - SSN                                      6,822 (4.195%)
+   - AP                                       6,822 (4.195%)
+
+11. TARGET-RISK DISTRIBUTION (eligible events)
+   min=-30.000 median=-30.000 max=-2.688
+   Targets with risk = -30 : 6,382 (84.06%)
+   Targets with risk >= -6 (Pc >= 1e-6, 'high risk'): 54 (0.71%)
+   C0_risk_eq_-30       6,382 (84.06%)
+   C1_risk_lt_-10       777 (10.23%)
+   C2_-10_to_-6         379 (4.99%)
+   C3_-6_to_-5          35 (0.46%)
+   C4_ge_-5             19 (0.25%)
+
+12. NOTES / ASSUMPTIONS / LIMITATIONS
+   - No CDM-id / creation-timestamp column exists; chronology is derived from time_to_tca (descending). Ties keep original file order.
+   - Possible leakage columns present and kept unchanged: ['max_risk_estimate', 'max_risk_scaling'] - verify their definition before using them as features.
+   - risk = -30 was retained as a valid (floor) value, never treated as missing.
+   - Original CSV is never modified; all outputs are new files.
+   - No local documentation was found: units of time_to_tca and meaning of risk are inferred from data ranges only.
